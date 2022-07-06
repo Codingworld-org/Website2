@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu:wght@500&display=swap');
+
+#wrap {
+  margin:2em auto;
+  font-family: 'Ubuntu', sans-serif;
+  max-width:960px;
+}
+h1, h2 {
+  text-align:center;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+}
+p.description {
+  margin-top: 1em;
+  letter-spacing:2px;
+  text-align:center;
+}
+.btnList {
+  margin-top: 2em;
+  text-align:center;
+}
+.btnList li {
+  display:inline-block;
+}
+
+/* 基本スタイル */
+.tableBlock {
+  margin-top:2em;
+}
+table {
+  width:100%;
+  table-layout:fixed;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border:1px solid #cfcfcf;
+  border-radius: 30px;
+}
+table caption {
+  padding:1em;
+  line-height: 1.5;
+  text-align: left;
+  background:#7784e8;
+}
+table tr th {
+  background:#f2f2f2;
+}
+table tr th,
+table tr td {
+  padding:1em;
+  line-height: 1.5;
+  text-align:left;
+  border:1px solid #cfcfcf;
+}
+
+.tableBlock.pattern04 {
+  overflow-x:auto;
+}
+.tableBlock.pattern04 table {
+  width:960px;
+}
+.tableBlock.pattern04::-webkit-scrollbar{
+    height: 0.5em;
+    background-color: #F1F1F1;
+}
+
+.tableBlock.pattern04::-webkit-scrollbar-thumb{
+    background-color: #BCBCBC;
+    border-radius: 12px;
+    border-radius: 1.2rem;
+}
+.tableBlock.pattern04::-webkit-scrollbar-thumb:hover{
+    background-color: #A9A9AA;
+}
+
+/* Tablet */
+@media screen and (max-width:768px){
+  
+  .tableBlock.pattern02 table {
+    font-size:75%;
+  }
+  
+  .tableBlock.pattern03 table,
+  .tableBlock.pattern03 table caption,
+  .tableBlock.pattern03 table thead,
+  .tableBlock.pattern03 table tbody,
+  .tableBlock.pattern03 table tr,
+  .tableBlock.pattern03 table tr th,
+  .tableBlock.pattern03 table tr td {
+    display:block;
+  }
+  .tableBlock.pattern03 table tr th,
+  .tableBlock.pattern03 table tr td {
+    margin:-1px; 
+  }
+  
+  .tableBlock.pattern05 table,
+  .tableBlock.pattern05 table caption,
+  .tableBlock.pattern05 table thead,
+  .tableBlock.pattern05 table tbody,  
+  .tableBlock.pattern05 table tr,
+  .tableBlock.pattern05 table tr th {
+    display:block;
+  }
+  .tableBlock.pattern05 table tr th {
+    margin:-1px; 
+  }
+  .tableBlock.pattern05 table tr td {
+    display:list-item;
+    list-style:disc inside;
+    border:none;
+  }
+  .tableBlock.pattern05 table tr td + td {
+    padding-top:0;
+  }
+  
+
+  .tableBlock.pattern06 table,
+  .tableBlock.pattern06 table caption,
+  .tableBlock.pattern06 table thead,
+  .tableBlock.pattern06 table tbody,
+  .tableBlock.pattern06 table tr,
+  .tableBlock.pattern06 table tr th,
+  .tableBlock.pattern06 table tr td {
+    display:block;
+  }
+  .tableBlock.pattern06 table tr th,
+  .tableBlock.pattern06 table tr td {
+    margin:-1px; 
+  }
+  .tableBlock.pattern06 table thead {
+	  display:none;
+  }
+  .tableBlock.pattern06 table tbody tr td[data-th]:before {
+    content: attr(data-th) " : ";
+    font-weight: bold;
+  	display: inline-block;
+    margin-right:0.25em;
+  }
+}
+
+@media screen and (max-width:480px){
+
+  .tableBlock.pattern02 table {
+    font-size:50%;
+  }
+}
+
